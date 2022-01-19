@@ -13,3 +13,13 @@ variable "additional_tags" {
   description = "Provide additional tags for the deployment"
   default     = {}
 }
+variable "web_vswitch_cidr" {
+  type        = string
+  description = "Provide vSwitch CIDR for the Web Zone"
+  default     = "192.168.1.0/24"
+}
+variable "db_vswitch_cidr" {
+  type        = string
+  description = "Provide vSwitch CIDR for the DB Zone"
+  default     = "192.168.11.0/24"
+}
